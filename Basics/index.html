@@ -12,39 +12,138 @@
     
 </head>
 <body>
-    <h1>Hello World!</h1>
+<header>
+    <h1>My goal for the year</h1>
+   
+    <nav aria-label="Primary-navigation">
+        <h2 id="primary-navigation">Primary Navigation</h2>
+        <ul>
+            <li><a href="#html">Learning HTML</a></li>
+            <li><a href="#vacation">Planing a vacation</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+<article id="html">
 
     <hr>
     <h2>I'm ready to learn HTML</h2>
     <p>This is my first web page</p>
-    
+    <section>
+        <h3>HTML5</h3>
+    <img src="img/html_logo_300x300.png" alt="HTML5 logo" title="I am learning HTML5">
+<figure>
+    <figcaption>An Example of HTML5 code</figcaption>
+    <p>
+        <code>&lt;h1&gt; Hello World!&lt;/h1&gt;</code>
+    </p>
+</figure>
+</section>
+<section>
     <h3>My Daily Schedule</h3>
     <p>Let me tell you how: </p>
         <ol>
         <li>&nbsp;&nbsp;&nbsp;...I learn more about web dev.</li>
         <li>&nbsp;&nbsp;&nbsp;...I plan out my schedule. </li>
-        <li>&nbsp;&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Developer Network">MDN</abbr></li>
+        <li>&nbsp;&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/pl/" >MDN</a></abbr></li>
     </ol>
+    <aside>
+        <details>
+            <summary>Guess the number of hours I code per day.</summary>
+            <p>I start at 8 am and I write code for 3 hours every morning.</p>
+        </details>
+    </aside>
+    <br>
+<table>
+    <caption>My daily schedule</caption>
+    <thead>
+    <tr>
+        <th>&nbsp;</th>
+        <th scope="col">Time</th>
+        <th scope="col">Activity</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th scope="row">Morning</th>
+        <td>
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+        </td>
+        <td>Write code</td>
+    </tr>
+    <tr>
+        <th scope="row">Brake</th>
+        <td>
+            <time datetime="11:00">11am</time>-<time datetime="12:00">12am</time>
+        </td>
+        <td>Eat Lunch</td>
+    </tr>
+    <tr>
+        <th scope="row">Afternoon</th>
+        <td>
+            <time datetime="12:00">12am</time>-<time datetime="17:00">17am</time>
+        </td>
+        <td>Study for other courses</td>
+    </tr>
+    <tr>
+        <th scope="row">Evening</th>
+        <td rowspan="2">All other times</td>
+        <td>Free time</td>
+    </tr>
+    <tr>
+        <th>Night</th>
+        <td>Sleep</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code ..and recharge!</td>
+    </tr>
+</tfoot>
+</table>
+
+
+</section>
+</article>
 
     <hr>
 
+    <article id="vacation">
     <h2>I am also planning a vacation</h2>
     <p>I've been working hard and really <em>need a gateway.</em></p>
     <p>I live in <abbr title="Kansas">KS</abbr> so I want visit beach.</p>
     
-    <h3>Place I'd like to visit</h3>
+<section>
+    <h3>Places I'd like to visit</h3>
     <ul>
-    <li><p>I've heard good thing about the Caribbean.</p></li>
+    <li><p>I've heard good thing about the Caribbean.</p>
+    <figure>
+        <img src="img/caribbean.jpg" alt="Caribbean Beach" title="I want to visit a caribbean beach" loading="lazy">
+            <figcaption>
+                Caribbean Beach Getaway
+            </figcaption>
+    </figure>
+    </li>
     <li><p>I've heard good things about going here:</p>
     <address>
         Margaritaville Island Reserve Riviera Cancun<br>
         Bahia Petempich Puerto Morelos, Mexico<br>
         colonia Morelos, Mexico<br>
-    </address></li>
+    </address>
+    <figure>
+        <img src="img/vacation.jpg" alt="cancun Vacation" title="It's 5 o'Clock somewhere!" loading="lazy">
+            <figcaption>
+                A Caribbean Vacation Image
+            </figcaption>
+
+    </figure>
+    </li>
     </ul>
+
+</section>
     <!-- TODO: Add more places-->
 
-
+<section>
     <h3>Places I want to avoid</h3>
 <dl>
     <dt>North Pole </dt>
@@ -58,9 +157,15 @@
 </dl>
 
     <p>Anywhere cold. <strong>No way!</strong></p>
-
+</section>
+    </article>
+</main>
     <hr>
-    &lt;&lt;&lt; &copy; Piotr &gt;&gt;&gt;
-
+    <footer>
+    <p>&lt;&lt;&lt; &copy; <a href="about.html">Piotr</a> &gt;&gt;&gt;</p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>
 </body>
 </html>
